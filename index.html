@@ -7,7 +7,11 @@
 </head>
 <body>
     <h1>Welcome to Vercel CI/CD Demo</h1>
+    <p>Your secret key is: <span id="secretKey"></span></p>
+    <script src="config.js"></script>
+    <script>
+      // Using the secretKey variable defined in config.js
+      document.getElementById("secretKey").textContent = secretKey;
+    </script>
 </body>
-<script src="config.js"></script>
-
 </html>
